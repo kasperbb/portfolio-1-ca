@@ -1,0 +1,81 @@
+.hero {
+	padding: 0 5rem;
+
+	display: grid;
+	place-items: center;
+
+	grid-template-columns: repeat(2, 1fr);
+	height: calc(100vh - 70px);
+}
+
+.hero__name {
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: var(--ls-tight);
+	margin-bottom: 2rem;
+	color: var(--text-primary);
+}
+
+.hero__about {
+	font-size: 1.125rem;
+	margin-bottom: 3.5rem;
+	line-height: 1.625;
+	font-weight: 600;
+	color: var(--text-secondary);
+}
+
+.hero__about-title {
+	font-size: 2.25rem;
+	letter-spacing: var(--ls-tight);
+	font-weight: 800;
+	margin-bottom: 2.5rem;
+	color: var(--text-primary);
+}
+
+.hero__about-title a {
+	color: var(--clr-primary);
+	text-decoration: none;
+}
+
+.hero__about-title a:hover {
+	text-decoration: underline;
+}
+
+.hero__buttons {
+	display: flex;
+}
+
+.hero__buttons a {
+	height: 3.5rem;
+	font-weight: 700;
+	background: #fff0f0;
+	border-radius: 100px;
+	border: 0;
+	padding: 0 2.5rem;
+	color: var(--clr-primary-darker);
+	cursor: pointer;
+	display: grid;
+	place-items: center;
+	text-decoration: none;
+	width: 100%;
+}
+
+.hero__buttons a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+}
+
+.hero__buttons a:first-child {
+	background: var(--gradient-primary);
+	color: #fff;
+	display: grid;
+	transition: 200ms ease;
+	margin-right: 1rem;
+}
+
+.hero__buttons a:first-child:hover {
+	transform: scale(1.025);
+	box-shadow: var(--shdaow-primary);
+	text-decoration: none;
+}

@@ -1,0 +1,19 @@
+body {
+	font-family: 'Nunito';
+}
+
+main.main {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+span.code {
+	background: #ececec;
+	padding: 3px 5px;
+	font-size: .8rem;
+}
+
+span.code.red {
+	color: #913a12;
+}

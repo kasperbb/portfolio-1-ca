@@ -1,0 +1,17 @@
+:root {
+	--clr-primary: #ff5851;
+	--clr-primary-darker: #f73a34;
+	--clr-primary-lighter: #f88c88;
+
+	--text-primary: hsl(250, 35%, 15%);
+	--text-secondary: hsl(250, 19%, 27%);
+	--text-tertiary: hsl(250, 9%, 46%);
+
+	--button-bg-primary: var(--clr-primary);
+
+	--gradient-primary: radial-gradient(circle at 58% 70%, var(--clr-primary-lighter), var(--clr-primary));
+
+	--shdaow-primary: 0px 8px 16px 0px rgba(255, 88, 81, .38);
+
+	--ls-tight: -0.025rem;
+}

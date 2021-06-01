@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Community Science Museum</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/_reset.css">
+    <link rel="stylesheet" href="../assets/css/_global.css">
+    <link rel="stylesheet" href="../assets/css/_var.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/project-single.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__logo" href="../index.html">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 500 250">
+                <g>
+                    <g>
+                        <polygon points="268.1,106.9 268.1,70.7 231.9,70.7 195.7,70.7 195.7,106.9 195.7,143.1 195.7,179.3 231.9,179.3 
+                            268.1,179.3 304.3,179.3 304.3,143.1 304.3,106.9 		" />
+                    </g>
+                    <g>
+                        <polygon points="412.9,106.9 412.9,70.7 376.7,70.7 340.5,70.7 340.5,106.9 340.5,143.1 340.5,179.3 376.7,179.3 
+                            412.9,179.3 449.1,179.3 449.1,143.1 449.1,106.9 		" />
+                    </g>
+                    <g>
+                        <g>
+                            <polygon points="87.1,106.9 87.1,70.7 50.9,70.7 50.9,106.9 50.9,143.1 50.9,179.3 87.1,179.3 87.1,143.1 
+                                123.3,143.1 123.3,106.9 			" />
+                        </g>
+                        <g>
+                            <rect x="123.3" y="143.1" width="36.2" height="36.2" />
+                        </g>
+                        <g>
+                            <rect x="123.3" y="70.7" width="36.2" height="36.2" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <nav class="header__nav">
+            <a href="../projects.html" class="header__nav-link active">Projects</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="project">
+            <img src="../assets/img/project-exam.png" alt="" class="project__image">
+            <h1 class="project__title">Project Exam - Our Small View Into Space</h1>
+            <a href="https://osvis.netlify.app/" class="project__link" target="_blank"
+                rel="noopener noreferrer">
+                https://osvis.netlify.app/
+            </a>
+            <p class="project__description">
+                My project exam for year 1 at Noroff. We were tasked with creating a blog-page. I chose to create a space-themed
+                blog-page. This page uses WordPress as a headless CMS for all the content. I had to implement these pages:
+                home, about, list of blog posts, blog post specific page and a contact page.
+            </p>
+            <div class="project__issues">
+                <h2 class="project__subtitle">Issues with the project:</h2>
+                <ol class="project__ol">
+                    <li>
+                        The number one critisism I had for myself after finishing the project was the design. Even though
+                        it hit all the marks I set for myself. It was simple enough, as to not distract from the content.
+                        It was vibrant enough as to not bore you. It was clearly legible and easy to navigate. Somehow, it just
+                        looks kind of boring, but to improve upon this, I think I'd have to re-create most - if not all of the
+                        design.
+                    </li>
+                    <li>
+                        I managed to finish both the level 1 and level 2 processes for the exam. Despite this there are some
+                        things I could think of to improve the blog. One that comes to mind is instead of having a "load more"
+                        button - blogs could automatically load when the user scrolls to be bottom of the page.
+                    </li>
+                    <li>
+                        Another improvement could be to add categories to the blog posts and add some way to filter the posts by one
+                        or more categories.
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ol>
+            </div>
+            <div class="project__changes">
+                <h2 class="project__subtitle">Changes made:</h2>
+                <ol class="project__ol">
+                    <li>
+                        Since I had forgot to update the alt-text and swap the large images for the compressed ones -
+                        this one was pretty simple
+                        to fix. I just went through every HTML file and found images that didn't have alt-text and
+                        updated them. I also compressed all images
+                        over a certain size.
+                    </li>
+                    <li>
+                        I decided to add another color to the website, one that compliments blue very well. Specifically
+                        I chose this color
+                        <span class="code red">#913a12</span>. I didn't want to go too overboard, so I used it
+                        sparingly. Mostly on some buttons
+                        and part of some headings.
+                    </li>
+                    <li>
+                        This is probably the biggest improvement I made. I added a cart and checkout-system for buying
+                        tickets. I also made
+                        sure to validate the form for buying tickets. When you buy a ticket, a modal will open up
+                        displaying the cart -
+                        and I used <span class="code">localStorage</span> to handle the cart-content.
+                    </li>
+                    <li>
+                        I also implemented validation for the contact-form. This went relatively quickly as I had just
+                        implemented the same for GameHub.
+                        Most of the code used for the validation is code I can share between the websites with little
+                        modification.
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
