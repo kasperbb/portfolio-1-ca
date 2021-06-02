@@ -56,10 +56,10 @@
     <main class="main">
         <section class="project">
             <img src="../assets/img/project-exam.png" alt="" class="project__image">
-            <h1 class="project__title">Project Exam - Our Small View Into Space</h1>
-            <a href="https://osvis.netlify.app/" class="project__link" target="_blank"
+            <h1 class="project__title">Our Small View Into Space - Project Exam</h1>
+            <a href="https://updated-exam.netlify.app/" class="project__link" target="_blank"
                 rel="noopener noreferrer">
-                https://osvis.netlify.app/
+                https://updated-exam.netlify.app/
             </a>
             <p class="project__description">
                 My project exam for year 1 at Noroff. We were tasked with creating a blog-page. I chose to create a space-themed
@@ -85,40 +85,24 @@
                         Another improvement could be to add categories to the blog posts and add some way to filter the posts by one
                         or more categories.
                     </li>
-                    <li>
-                        
-                    </li>
                 </ol>
             </div>
             <div class="project__changes">
                 <h2 class="project__subtitle">Changes made:</h2>
                 <ol class="project__ol">
                     <li>
-                        Since I had forgot to update the alt-text and swap the large images for the compressed ones -
-                        this one was pretty simple
-                        to fix. I just went through every HTML file and found images that didn't have alt-text and
-                        updated them. I also compressed all images
-                        over a certain size.
+                        Implementing auto-load for the blog page was pretty simple. I already had all the code to load more blog posts.
+                        The only thing I had to do was to figure out a way to detect when the user has scrolled to the bottom of the page.
+                        Luckily I dealt with scrolling for my carousel, and detecting the end of the carousel is very similar to detecting
+                        the bottom of the page. Then I just added an if check for that along with the event listener on the window object
+                        listening for scrolling.
                     </li>
                     <li>
-                        I decided to add another color to the website, one that compliments blue very well. Specifically
-                        I chose this color
-                        <span class="code red">#913a12</span>. I didn't want to go too overboard, so I used it
-                        sparingly. Mostly on some buttons
-                        and part of some headings.
-                    </li>
-                    <li>
-                        This is probably the biggest improvement I made. I added a cart and checkout-system for buying
-                        tickets. I also made
-                        sure to validate the form for buying tickets. When you buy a ticket, a modal will open up
-                        displaying the cart -
-                        and I used <span class="code">localStorage</span> to handle the cart-content.
-                    </li>
-                    <li>
-                        I also implemented validation for the contact-form. This went relatively quickly as I had just
-                        implemented the same for GameHub.
-                        Most of the code used for the validation is code I can share between the websites with little
-                        modification.
+                        Adding the category-system was going to take a little bit more time, as I had to re-write some of the initial
+                        loding code for the blog posts. I got all the categories from this endpoint <span class="code">/wp-json/wp/v2/categories</span>.
+                        I put the categories in a form on the page with checkboxes. When the user checks a category I push it to an array.
+                        When they uncheck it, I remove it. I joined that array on the original fetch, with the <span class="code">categories</span>
+                        query parameter. 
                     </li>
                 </ol>
             </div>

@@ -13,7 +13,7 @@ main.main {
 
 .projects {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	gap: 4rem;
 }
 
@@ -31,7 +31,7 @@ main.main {
 	font-weight: 800;
 	line-height: 1;
 	letter-spacing: var(--ls-tight);
-	margin: 1rem 0;
+	margin: 1rem 0 .25rem 0;
 	color: var(--text-primary);
 }
 
