@@ -1,6 +1,8 @@
 main.main {
 	margin-top: 5rem;
 	margin-bottom: 5rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
 }
 
 .main__title {
@@ -13,7 +15,7 @@ main.main {
 
 .projects {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	gap: 4rem;
 }
 
@@ -39,4 +41,10 @@ main.main {
 	color: var(--clr-primary);
 	text-decoration: underline;
 	text-decoration-thickness: 2px;
+}
+
+@media (min-width: 768px) {
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
